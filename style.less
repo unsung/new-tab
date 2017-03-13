@@ -1,0 +1,83 @@
+@light: #f37923;
+@dark: #01273a;
+@yellow: #fabd2f;
+@blue: #83a598;
+@white: #ebdbb2;
+@black: #282828;
+@grey: #928374;
+
+html {
+    height: 100%;
+}
+
+body {
+
+    background: url(villagel.png), url(villager.png), linear-gradient(to right, @dark, @light);
+    background-position: bottom left, bottom right, center;
+    background-repeat: no-repeat;
+
+    color: @white;
+    font-family: 'Roboto Mono';
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    min-height: 100%
+}
+
+main {
+    text-align: center;
+    margin-bottom: 50px;
+
+    h1 {
+        color: @grey;
+        font-size: 48px;
+        margin: 0;
+        .day {
+            color: @yellow;
+        }
+        .night {
+            color: @blue;
+        }
+    }
+
+
+}
+
+nav {
+    ul {
+        color: @light;
+        list-style-type: none;
+        padding: 0;
+        
+        a {
+            color: @dark;
+            text-decoration: none;
+            line-height: 200%;
+            
+            &:visited {
+                color: @dark;
+            }
+        }
+    }
+} 
+
+.search-box {
+    width: 525px;
+    height: 30px;
+    color: @white;
+    background-color: @black;
+    border: 1px solid @grey;
+    box-shadow: 0 0 5px #000;
+    text-align: center;
+    margin: 20px 0 10px 0;
+    font-family: 'Roboto Mono';
+    font-size: 14px;
+    
+    &:focus {
+        outline-width: 0;
+    }
+
+    &:placeholder-shown {
+        color: fade(@grey, 50%);
+    }
+}

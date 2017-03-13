@@ -1,0 +1,60 @@
+html {
+  height: 100%;
+}
+body {
+  background: url(villagel.png), url(villager.png), linear-gradient(to right, #01273a, #f37923);
+  background-position: bottom left, bottom right, center;
+  background-repeat: no-repeat;
+  color: #ebdbb2;
+  font-family: 'Roboto Mono';
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+main {
+  text-align: center;
+  margin-bottom: 50px;
+}
+main h1 {
+  color: #928374;
+  font-size: 48px;
+  margin: 0;
+}
+main h1 .day {
+  color: #fabd2f;
+}
+main h1 .night {
+  color: #83a598;
+}
+nav ul {
+  color: #f37923;
+  list-style-type: none;
+  padding: 0;
+}
+nav ul a {
+  color: #01273a;
+  text-decoration: none;
+  line-height: 200%;
+}
+nav ul a:visited {
+  color: #01273a;
+}
+.search-box {
+  width: 525px;
+  height: 30px;
+  color: #ebdbb2;
+  background-color: #282828;
+  border: 1px solid #928374;
+  box-shadow: 0 0 5px #000;
+  text-align: center;
+  margin: 20px 0 10px 0;
+  font-family: 'Roboto Mono';
+  font-size: 14px;
+}
+.search-box:focus {
+  outline-width: 0;
+}
+.search-box:placeholder-shown {
+  color: rgba(146, 131, 116, 0.5);
+}
